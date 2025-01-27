@@ -7,11 +7,22 @@
 body {
     background-color: #08AEEA;
     background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#root {
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    height: 100vh;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,4 +55,10 @@ body {
 .getBtn:hover {
     background: green;
     color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
 }

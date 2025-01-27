@@ -12,7 +12,8 @@ const App = () => {
   const dispatch = useDispatch();
 
   const handleChangeCategory = (event) => {
-    setCategory(event.target.value);
+    let temp = event.target.value.trim().toLowerCase();
+    setCategory(temp);
   }
 
   const handleClick = () => {
